@@ -37,7 +37,7 @@ const AdminPanel = () => {
   const deletePost = async (postId) => {
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/admin/deletePost/${postId}`,
+        `${process.env.REACT_APP_API_URL}/posts/admin/deletePost/${postId}`,
         { method: "DELETE", headers: { Authorization: `Bearer ${token}` } }
       );
       const data = await res.json();
