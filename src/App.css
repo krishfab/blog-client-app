@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.home-header{
+  padding-top: 100px !important;
+  font-weight: 800;
+}
+
+.navbar-brand{
+  margin-left: 100px;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* keeps text color same as theme */
+  padding: 5px 0;
+  font-weight: 500px;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* thickness of underline */
+  left: 0;
+  bottom: 0;
+  background-color: black; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* POST DETAILS */
+
+.post-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
+
+.post-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.author-avatar-icon {
+  width: 40px;
+  height: 40px;
+  color: #aaa;
+  margin-right: 12px;
+}
+
+.author-name {
+  font-weight: 500;
+  color: #444;
+}
+
+.post-content {
+  color: #444;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.comments-section {
+  margin-top: 20px;
+}
+
+.comments-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.comment {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.comment-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.comment-avatar-icon {
+  width: 32px;
+  height: 32px;
+  color: #aaa;
+  margin-right: 8px;
+}
+
+.comment-author {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.comment-text {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.no-comments {
+  color: #777;
+  font-style: italic;
+}
+
+/* login */
+
+/* Center the login container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  min-height: 100vh;         /* take full screen height */
+  background-color: #000;    /* black background */
+  color: #fff;               /* white text */
+}
+
+/* Title */
+.form-container {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  min-height: 100vh;        /* full screen height */
+  background-color: #ffffff; /* white background */
+}
+
+form {
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center; /* center the form content */
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  width: 50%; /* button takes half of form width */
+  padding: 12px;
+  margin-top: 16px;
+  background: #000; /* black button */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #333; /* slightly lighter on hover */
+}
+
+
+
+/* LOGIN FORM */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;      /* full page center */
+  background-color: #fff; /* white background */
+}
+
+.login-form {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.login-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 1rem;
+  color: #000;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #000;
+}
+
+.login-button {
+  width: 50%; /* half width */
+  padding: 12px;
+  margin-top: 18px;
+  background: #000;   /* black button */
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: #333;
+}
+
+.login-toggle {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.toggle-link {
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.toggle-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.toggle-link:hover::after {
+  width: 100%;
+}
+
+/* ADD POST */
+
+/* ADD POST FORM */
+
+.addpost-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full screen center */
+  background: #fff;
+}
+
+.addpost-form {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px; /* wider than login */
+  color: #000;
+}
+
+.addpost-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  color: #000;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #000;
+}
+
+.addpost-button {
+  display: block;
+  margin: 0 auto; /* center button */
+  width: 50%;      /* half width */
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addpost-button:hover {
+  background: #333;
+}
+
+/* PROFILE */
+
+/* Container to center content vertically and horizontally */
+.profile-container {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  min-height: 100vh;
+  background-color: #fff;  /* white background */
+  padding: 20px;
+}
+
+/* Form styling */
+.profile-form {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border: 1px solid #000; /* black border */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff; /* white background */
+  color: #000;            /* black text */
+  text-align: center;
+}
+
+/* Title */
+.profile-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Inputs */
+.profile-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #000; /* black border */
+  border-radius: 5px;
+  background-color: #fff;  /* white background */
+  color: #000;             /* black text */
+  font-size: 1rem;
+}
+
+/* Update button */
+.profile-button {
+  padding: 0.8rem;
+  border: 1px solid #000; /* black border */
+  border-radius: 5px;
+  background-color: #000; /* black background */
+  color: #fff;            /* white text */
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.profile-button:hover {
+  opacity: 0.8;
+}
+
+/* Logout button (red) */
+.profile-logout {
+  background-color: #d32f2f;
+  border: none;
+  margin-top: 1rem;
+}
+
+.profile-logout:hover {
+  background-color: #b71c1c;
+}
+
+/* Messages */
+.profile-message {
+  color: green;
+  margin-bottom: 1rem;
+}
