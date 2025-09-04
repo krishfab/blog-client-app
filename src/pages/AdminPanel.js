@@ -52,7 +52,7 @@ const AdminPanel = () => {
   const deleteComment = async (commentId, postId) => {
     try {
       const res = await fetch(
-        `${process.env.REACT_APP_API_URL}/admin/deleteComment/${commentId}`,
+        `${process.env.REACT_APP_API_URL}/posts/admin/deleteComment/${commentId}`,
         { method: "DELETE", headers: { Authorization: `Bearer ${token}` } }
       );
       const data = await res.json();
